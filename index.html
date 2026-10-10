@@ -17,13 +17,17 @@
 <style>
 @font-face{font-family:FEHeroes;src:url('/feh.woff2') format('woff2');font-display:swap}
 *{box-sizing:border-box}body{margin:0;background:#fff;color:#171717;font-family:FEHeroes,serif;line-height:1.6}main{min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:48px 24px;text-align:center}img{width:112px;height:112px}h1{font-size:clamp(1.7rem,5vw,2.6rem);line-height:1.25;margin:24px 0 12px;max-width:650px}p{font-size:1.1rem;margin:0 0 28px;max-width:600px}a{display:inline-block;background:#171717;color:#fff;padding:12px 28px;border-radius:6px;text-decoration:none;font-size:1.1rem}a:hover{background:#373737}a:focus-visible{outline:3px solid #49739b;outline-offset:5px}footer{margin-top:44px;font-size:.85rem;color:#5a5a5a;max-width:600px}
+.shortcuts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;width:100%;max-width:800px}.shortcut{padding:24px;border:1px solid #ddd;border-radius:8px;display:flex;flex-direction:column;align-items:center}.shortcut h2{font-size:1.35rem;margin:0 0 10px;line-height:1.3}.shortcut p{font-size:1rem;margin:0 0 20px}.shortcut a{margin-top:auto;width:100%;padding:12px 16px}@media(max-width:600px){.shortcuts{grid-template-columns:1fr}main{padding:32px 20px}.shortcut{padding:20px}}
 </style>
 </head>
 <body><main>
 <img src="/favicon.png" alt="FEH Rerun Schedule symbol" width="112" height="112">
 <h1>FEH Rerun Schedule by Clustifle</h1>
 <p>The unofficial Fire Emblem Heroes rerun schedule tracker</p>
-<a href="https://clustifle.github.io/FEH-Rerun-Schedule-by-Clustifle/">Open schedule</a>
+<nav class="shortcuts" aria-label="Website shortcuts">
+<section class="shortcut"><h2>Public users</h2><p>If you are a public user, check the main schedule website here.</p><a href="https://clustifle.github.io/FEH-Rerun-Schedule-by-Clustifle/">Main schedule website</a></section>
+<section class="shortcut"><h2>Schedule Managers</h2><p>For assigned Schedule Managers, go to Administrative Manager.</p><a href="https://clustifle.github.io/FEHRS_AdmManager/">Administrative Manager</a></section>
+</nav>
 <footer>Artwork © Nintendo / INTELLIGENT SYSTEMS.<br>This is an unofficial fan project, unaffiliated with Nintendo or INTELLIGENT SYSTEMS.</footer>
 </main></body>
 </html>
